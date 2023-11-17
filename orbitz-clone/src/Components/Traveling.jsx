@@ -7,7 +7,7 @@ const Traveling = () => {
         <h2>Travelling Tips</h2>
         <div  className='mains ' >
         <div className='opa'>
-        <img alt="" class="uitk-image-media" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_375x468_20211117.jpg?impolicy=fcrop&amp;w=450&amp;h=600&amp;q=mediumHigh"/>
+        <img onClick={()=>window.open("https://www.orbitz.com/blog/2016/01/national-parks-centennial/,_blank")} alt="" class="uitk-image-media" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_375x468_20211117.jpg?impolicy=fcrop&amp;w=450&amp;h=600&amp;q=mediumHigh"/>
         <div className='np'>
         <h2>National Parks</h2>
         <p>There's plenty to keep you busy.</p>
@@ -15,7 +15,7 @@ const Traveling = () => {
         </div>
         </div>
         <div className='opa'>
-        <img alt="" class="uitk-image-media" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_375x468_20211117.jpg?impolicy=fcrop&amp;w=450&amp;h=600&amp;q=mediumHigh"/>
+        <img  onClick={()=>window.open ("https://www.orbitz.com/blog/2016/08/perfect-road-trips-every-season/,_blank")}alt="" class="uitk-image-media" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_375x468_20211117.jpg?impolicy=fcrop&amp;w=450&amp;h=600&amp;q=mediumHigh"/>
         <div className='np'>
         <h2>The perfect road trip</h2>
         <p>Find an adventure for every season</p>

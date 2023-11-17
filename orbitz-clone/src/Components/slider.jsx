@@ -18,7 +18,7 @@ const Slider = () => {
       <p>United Kingdom</p>
     </div>
   </div>
-  <div class="carousel-cell">
+  <div onClick={()=>window.open("https://www.orbitz.com/Hotel-Search?adults=2&destination=Ramnagar%2C%20Uttarakhand%2C%20India&endDate=2023-12-02&regionId=6049981&semdtl=&sort=RECOMMENDED&startDate=2023-12-01&theme=&useRewards=false&userIntent=","_blank")} class="carousel-cell">
   <div  className='slide-images'>
     <img src=" https://mediaim.expedia.com/destination/1/a05ff37e4da759689430321248e304e8.jpg " />
   </div>
