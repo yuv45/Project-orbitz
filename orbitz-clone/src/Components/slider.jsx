@@ -1,6 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./style.css"
 const Slider = () => {
+  const increament=()=>{
+ if(show==3){
+  setshow(1)
+ }
+ else{
+  setshow(show+1)
+ }
+  }
+  const decreament=()=>{
+    if(show==1){
+      setshow(3)
+      
+    }
+    else{
+      setshow(show-1)
+    }
+  }
+  const[show,setshow]=useState(1);
+  
+  
   return (
 <>
 <div className='carousel'>
@@ -8,8 +28,11 @@ const Slider = () => {
 <h2>Explore stays in trending destinations</h2>
 </div>
 <div class="main-carousel"  data-flickity='{"groupCells":true,"autoplay":true}'>
-
-  <div onClick={()=>window.open("https://www.orbitz.com/Hotel-Search?adults=2&destination=Eastbourne%2C%20England%2C%20United%20Kingdom&endDate=2023-12-02&regionId=4629&semdtl=&sort=RECOMMENDED&startDate=2023-12-01&theme=&useRewards=false&userIntent=","_blank")} class="carousel-cell">
+  <button className='butn' onClick={decreament}>&lt;</button>
+ {
+  
+  show==1?<>
+   <div onClick={()=>window.open("https://www.orbitz.com/Hotel-Search?adults=2&destination=Eastbourne%2C%20England%2C%20United%20Kingdom&endDate=2023-12-02&regionId=4629&semdtl=&sort=RECOMMENDED&startDate=2023-12-01&theme=&useRewards=false&userIntent=","_blank")} class="carousel-cell">
     <div  className='slide-images'>
       <img  src="  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfOkbk45HAze_9rzo8EsM0WRjCdRWhIaMKmw&usqp=CAU" alt="" />
     </div>
@@ -36,6 +59,9 @@ const Slider = () => {
       <p>India</p>
     </div>
   </div>
+  </>:show==2?
+  <>
+  
   <div class="carousel-cell">
   <div  className='slide-images'>
     <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/98000/98156-Gun-Hill.jpg" alt="" />
@@ -63,7 +89,11 @@ const Slider = () => {
       <p>India</p>
     </div>
   </div>
-  <div class="carousel-cell">
+  
+  </>:
+  <>
+   
+   <div class="carousel-cell">
   <div  className='slide-images'>
     <img src=" https://mediaim.expedia.com/destination/2/1a88157ba7c0bedb53ca0f1af6ad69fe.jpg" alt="" />
   </div>
@@ -81,6 +111,22 @@ const Slider = () => {
     <p>India</p> 
       </div>
   </div>
+  <div class="carousel-cell">
+  <div  className='slide-images'>
+    <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXmHaHvbacrJJUVQugY5A1ve_a3pCAxjQLQ&usqp=CAU" alt="" />
+  </div>
+    <div className='slide-details'>
+      <h6>Manali</h6>
+      <p>India</p>
+    </div>
+  </div>
+  
+  
+  </>
+ }
+ <button className='butn'  onClick={increament}>&gt;</button>
+ 
+ 
 </div>
 </div>
 </>
