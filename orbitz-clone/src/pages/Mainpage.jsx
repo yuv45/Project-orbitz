@@ -17,7 +17,10 @@ export const Mainpage  = () => {
       <Slider/>
       <Featured/>
       <Traveling/></div>:
-      <h1>For Further Accessibility you have to SignIn</h1>
+      <div className='sign'>
+   <h1>For Further Accessibility you have to SignIn</h1>
+      </div>
+   
       } 
     
     </>

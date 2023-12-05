@@ -7,12 +7,16 @@ export const Logout =()=>{
     const navigate=useNavigate()
     return(
         <>
-        <div>
+        <div className='page'>
+        <h1> You want to logout</h1>
+        <div  className='logout'>
             <button onClick={()=>{
             setLoggedIn(false)
             navigate("/signin")
             }}>Logout</button>
         </div>
+        </div>
+        
         </>
     )
 }

@@ -27,7 +27,7 @@ const Slider = () => {
   <div className='heading'>
 <h2>Explore stays in trending destinations</h2>
 </div>
-<div class="main-carousel"  data-flickity='{"groupCells":true,"autoplay":true}'>
+<div class="main-carousel">
   <button className='butn' onClick={decreament}>&lt;</button>
  {
   

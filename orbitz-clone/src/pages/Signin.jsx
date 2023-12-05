@@ -20,7 +20,7 @@ export const Signin = () => {
         </div>
         <h1>Sign in </h1>
         </div>
-       <form>
+       <form className='margin'>
          
         <input onChange={handlechange} name='email' type='text' placeholder='Email address'/>
         <br/>

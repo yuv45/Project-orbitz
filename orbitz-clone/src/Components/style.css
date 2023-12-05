@@ -317,7 +317,7 @@ form {
   border: 1px solid grey;
   width: 90%;
   margin: auto;
-  height: 180px;
+  height: fit-content;
   margin-top: 20px;
 }
 .boxb {
@@ -340,13 +340,19 @@ form {
 
 .staysd {
   border: 1.5px solid black;
-  width: 25%;
+  width: 100%;
+ 
   height: 50px;
   padding: 0.5em;
 }
 .mainx {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  width: 100%;
+  gap: 50px;
+  grid-template-columns: repeat(4,1fr);
+
+  height: auto;
+ 
   padding: 1rem;
 }
 .btn {
@@ -354,6 +360,13 @@ form {
   background-color: #c83259;
   border: none;
   color: white;
+}
+.sign{
+  text-align: center;
+  margin: 10%;
+  background-color: #00253c;
+  color: white;
+  border-radius: 10px;
 }
 .slow-nav {
   display: flex;
@@ -382,8 +395,9 @@ padding: 0.3rem;
   margin-top: 10px;
 }
 .checklist2 {
-  display: flex;
-  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
   justify-content: space-around;
 }
 .textarea {
@@ -392,14 +406,16 @@ padding: 0.3rem;
   margin-bottom: 30px;
   width: 90%;
   margin: auto;
-  margin-top: 20px;
-  display: flex;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
 
   justify-content: space-around;
   margin-bottom: 70px;
 }
 .textpart {
-  width: 30%;
+  width: 100%;
   height: 150px;
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
@@ -428,4 +444,323 @@ padding: 0.3rem;
    font-size: 20px;
    cursor: pointer
    ;
+}
+.icons-menu{
+  display: none;
+  
+
+}
+ .page{
+  text-align: center;
+  margin: 20%;
+  background-color: #00253c;
+  border-radius: 20px;
+  color: white;
+  padding: 1rem;
+
+ }
+ .page button{
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+ }
+ .main-signinbox{
+ 
+  height: auto;
+ } 
+
+ 
+ 
+@media screen and (max-width:420px) {
+  .option{
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  .Footer-container{
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    
+  }
+  .Footer-container p{
+    font-size: 10px;
+    margin-left: -10px;
+    text-align: center;
+  }
+  .main-carousel{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    
+ 
+  }
+  .main-carousel .slide-images{
+    width: 300px;
+    text-align: center;
+   
+  }
+  .main-carousel img{
+    width: 300px;
+    text-align: center;
+  }
+  #mountains{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    
+  }
+  #booking-details{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 300px;
+    text-align: center;
+  }
+  .mains{
+    grid-template-columns: repeat(1,1fr);
+    width: 300px;
+    text-align: center;
+  }
+  #Destinations{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .rewards {
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 400px;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .rewards ul{
+ font-size: 12px;
+  }
+  .rewards li{
+    font-size: 8px;
+  }
+  .rewards img{
+    width: 300px;
+    text-align: center;
+  }
+  .rewards .Scanner .rewards-images2{
+    width: 100px;
+    text-align: center;
+  }
+  .child{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+  }
+  .textarea{
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+    margin-bottom: 500px;
+  } 
+  .navc p{
+    font-size: 10px;
+    justify-content: space-around;
+    width: 100%;
+  
+  }
+  .textpart {
+    width: 300px;
+    text-align: center;
+  }
+  .mainx{
+    grid-template-columns: repeat(1,1fr);
+    width: fit-content;
+    text-align: center;
+  }
+  .boxb{
+    text-align: center;
+  }
+  .nav-components{
+    display: none;
+  }
+  .icons-menu{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+    padding: 1rem;
+    font-size: 20px;
+  }
+  .get-app{
+  display: none;
+  }
+  .more-travel{
+    display: none;
+  }
+  .main-signinbox{
+    width: fit-content;
+    margin: auto;
+    height: auto;
+    text-align: center;
+  }
+  .margin{
+    width: max-content;
+    text-align: left;
+    margin-left: 20px;
+  
+ 
+  }
+  .margin p{
+    text-align: center;
+    width:40%;
+    margin-left: 10px;
+    
+  }
+  .margin input{
+    width: 300px;
+    
+}
+.checklist{
+  display: none;
+}
+
+}
+@media screen and (max-width:720px) {
+  .option{
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  .Footer-container{
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    
+  }
+  .Footer-container p{
+    font-size: 15px;
+    margin-left: -15px;
+    text-align: center;
+  }
+  .main-carousel{
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    
+ 
+  }
+  .main-carousel .slide-images{
+    width: 300px;
+    text-align: center;
+   
+  }
+  .main-carousel img{
+    width: 300px;
+    text-align: center;
+  }
+  #mountains{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    
+  }
+  #mountains .trees img{
+    width: 600px;
+  }
+  #booking-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 600px;
+    text-align: center;
+  }
+  .mains{
+    grid-template-columns: repeat(1,1fr);
+    width: 600px;
+    text-align: center;
+  }
+  #Destinations{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .rewards {
+    grid-template-columns: repeat(3,200px);
+  
+    margin-bottom: 100px;
+    font-size: 10px;
+    width: 200px;
+    
+  }
+  
+  .rewards ul{
+ font-size: 12px;
+  }
+  .rewards li{
+    font-size: 8px;
+  }
+  .rewards img{
+    width: 200px;
+    text-align: center;
+  }
+  .rewards .Scanner .rewards-images2{
+    width: 100px;
+    text-align: center;
+  }
+  .child{
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+  }
+  .textarea{
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin-bottom: 300px;
+  } 
+  .navc p{
+    font-size: 10px;
+    justify-content: space-around;
+    width: 100%;
+  
+  }
+  .textpart {
+    width: 300px;
+    text-align: center;
+  }
+  .mainx{
+    grid-template-columns: repeat(2,1fr);
+    width: fit-content;
+    text-align: center;
+  }
+  .boxb{
+    text-align: center;
+  }
+  .nav-components{
+    display: none;
+  }
+  .icons-menu{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+    padding: 1rem;
+    font-size: 20px;
+  }
+  .get-app{
+  display: none;
+  }
+  .more-travel{
+    display: none;
+  }
+  .main-signinbox{
+    width: fit-content;
+    margin: auto;
+    height: auto;
+    text-align: center;
+  }
+  .margin{
+    width: max-content;
+    text-align: left;
+    margin-left: 20px;
+  
+ 
+  }
+  .margin p{
+    text-align: center;
+    width:40%;
+    margin-left: 10px;
+    
+  }
+  .margin input{
+    width: 300px;
+    
+}
+.checklist{
+  display: none;
+}
+
 }

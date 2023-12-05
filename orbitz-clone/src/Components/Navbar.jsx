@@ -1,7 +1,8 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../context/AuthContextProvider'
-const Navbar = props => {
+const Navbar = () => {
+ 
   const navigate=useNavigate()
   const {loggedIn}=useContext(AuthContext)
   return (
@@ -28,6 +29,9 @@ const Navbar = props => {
       <h6>List your property</h6>
       <h6>Support</h6>
       <h6>Trips</h6>
+
+
+
       {
          loggedIn? <h6 onClick={()=>{
         navigate("/logout")
@@ -42,6 +46,16 @@ const Navbar = props => {
  
 
     </div>
+    <div className='icons-menu'>
+<i class='bx bxs-food-menu'></i>
+{
+         loggedIn? <h6 onClick={()=>{
+        navigate("/logout")
+         }}>Logout</h6>: <h6 onClick={()=>{
+          navigate("/signin")
+         }}>Sign in</h6>
+      }
+</div>
     </div>
     </>
   )
